@@ -1,7 +1,15 @@
 /* Rofi theme by Nicklas Rudolfsson based on my suckless-arch dwm colors */
 
+/* Define colors */
+@col_gray1: #2E2E2E;
+@col_gray2: #444444;
+@col_gray3: #E6E6E6;
+@col_gray4: #FFFFFF;
+@col_cyan: #444444;
+@col_brightborder: #FFFFFF;
+
+/* General settings */
 * {
-    /* General settings */
     border: 2px solid @col_gray2;
     border-radius: 6px;
     padding: 10px;
@@ -10,57 +18,68 @@
     font: "JetBrains Mono 10";
 }
 
+/* Window settings */
 window {
     background: @col_gray1;
     border: 2px solid @col_gray2;
 }
 
+/* Element settings */
 element {
     border-radius: 6px;
     padding: 5px;
 }
 
+/* Listview settings */
 listview {
     border: 0px;
     background: @col_gray1;
 }
 
+/* Selected element settings */
 element selected {
     background: @col_cyan;
     color: @col_gray4;
 }
 
+/* Normal element settings */
 element normal {
     background: @col_gray1;
     color: @col_gray3;
 }
 
+/* Urgent element settings */
 element urgent {
     background: @col_cyan;
     color: @col_gray4;
 }
 
+/* Input bar settings */
 inputbar {
     border: 2px solid @col_gray2;
     background: @col_gray1;
     color: @col_gray3;
 }
 
+/* Preview settings */
 preview {
     border: 1px solid @col_gray2;
     background: @col_gray1;
     color: @col_gray3;
 }
 
+/* Scrollbar settings */
 scrollbar {
     border: 0px;
     background: @col_gray2;
 }
 
+/* Scrollbar slider settings */
 scrollbar slider {
     background: @col_gray4;
 }
 
+/* Popup settings */
 popup {
     border: 2px solid @col_brightborder;
     background: @col_gray1;
