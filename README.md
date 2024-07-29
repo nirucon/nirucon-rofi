@@ -1,54 +1,36 @@
 # nirucon-rofi
 
-```markdown
-# Rofi Theme: nirucn - matching nirucon suckless-arch dwm colors
+# nirucon - Noir Rofi Theme
 
-## Theme Colors
+Welcome to **nirucon**, a Noir-style theme for Rofi designed by Nicklas Rudolfsson. This theme is tailored to complement my suckless-arch dwm setup, offering a sleek and minimalistic look.
 
-The theme uses the following color scheme:
+https://github.com/nirucon/suckless-arch that I use to clone from my post install script: https://github.com/nirucon/nirucon-alpi
 
-- **Background Color**: `#2E2E2E`
-- **Border Color**: `#444444`
-- **Foreground Color**: `#E6E6E6`
-- **Selected Foreground Color**: `#FFFFFF`
-- **Selected Background Color**: `#444444`
-- **Bright Border Color**: `#FFFFFF`
+## Features
 
-## Installation
+- **Noir Aesthetic**: Dark background with high-contrast text for a modern, minimalist appearance.
+- **Customizable**: Easily adjust the theme to fit your preferences or environment.
+- **Seamless Integration**: Designed to match with the suckless-arch dwm setup.
 
-1. **Clone the Repository**
+## Theme Configuration
 
-   ```bash
-   git clone https://github.com/nirucon/nirucon-rofi
-   cd nirucon-rofi
-   ```
+Here's a quick overview of the configuration used in the `nirucon.rasi` theme:
 
-2. **Copy the Theme File**
+- **Font**: Mononoki Nerd Font, size 10
+- **Background Colors**: 
+  - Main: #2E2E2E
+  - Alternative: #444444
+- **Foreground Colors**:
+  - Main: #E6E6E6
+  - Alternative: #FFFFFF
 
-   Copy the `nirucon.rasi` file to your Rofi themes directory:
+### Key Style Elements
 
-   ```bash
-   cp nirucon.rasi ~/.config/rofi/themes/
-   ```
-
-   If the `themes` directory does not exist, create it first:
-
-   ```bash
-   mkdir -p ~/.config/rofi/themes/
-   ```
-
-## Usage
-
-To apply the theme in Rofi, use the following command:
-
-```bash
-rofi -theme ~/.config/rofi/themes/nirucon.rasi
-```
-
-## Customization
-
-Feel free to modify the `.rasi` file to suit your preferences. You can adjust settings such as padding, border-radius, and font by editing the theme file.
+- **Window**: Light border and padding with transparency for a clean look.
+- **Input Bar**: Simple design with padded entry field.
+- **List View**: Customizable lines and scrollbar for easy navigation.
+- **Elements**: Text elements are padded and highlight on selection.
 
 ## License
 
-Do what you want! 
+Do what you want and give me cred if you want to :)
