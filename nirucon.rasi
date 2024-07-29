@@ -1,0 +1,67 @@
+/* Rofi theme by Nicklas Rudolfsson based on my suckless-arch dwm colors */
+
+* {
+    /* General settings */
+    border: 2px solid @col_gray2;
+    border-radius: 6px;
+    padding: 10px;
+    background: @col_gray1;
+    foreground: @col_gray3;
+    font: "JetBrains Mono 10";
+}
+
+window {
+    background: @col_gray1;
+    border: 2px solid @col_gray2;
+}
+
+element {
+    border-radius: 6px;
+    padding: 5px;
+}
+
+listview {
+    border: 0px;
+    background: @col_gray1;
+}
+
+element selected {
+    background: @col_cyan;
+    color: @col_gray4;
+}
+
+element normal {
+    background: @col_gray1;
+    color: @col_gray3;
+}
+
+element urgent {
+    background: @col_cyan;
+    color: @col_gray4;
+}
+
+inputbar {
+    border: 2px solid @col_gray2;
+    background: @col_gray1;
+    color: @col_gray3;
+}
+
+preview {
+    border: 1px solid @col_gray2;
+    background: @col_gray1;
+    color: @col_gray3;
+}
+
+scrollbar {
+    border: 0px;
+    background: @col_gray2;
+}
+
+scrollbar slider {
+    background: @col_gray4;
+}
+
+popup {
+    border: 2px solid @col_brightborder;
+    background: @col_gray1;
+}
