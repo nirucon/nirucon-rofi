@@ -1,86 +1,71 @@
-/* Rofi theme by Nicklas Rudolfsson based on my suckless-arch dwm colors */
+/*
+ * ROFI theme by Nicklas Rudolfsson
+ *
+ */
 
-/* Define colors */
-@col_gray1: #2E2E2E;
-@col_gray2: #444444;
-@col_gray3: #E6E6E6;
-@col_gray4: #FFFFFF;
-@col_cyan: #444444;
-@col_brightborder: #FFFFFF;
+configuration {
+  font: "Mononoki Nerd Font 10";
 
-/* General settings */
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
+}
+
 * {
-    border: 2px solid @col_gray2;
-    border-radius: 6px;
-    padding: 10px;
-    background: @col_gray1;
-    foreground: @col_gray3;
-    font: "JetBrains Mono 10";
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  bg: #18181B;
+  bg-alt: #20212C;
+  fg: #A0A0AB;
+  fg-alt: #5D5E72;
+
+  background-color: @bg;
+  text-color: @fg-alt;
 }
 
-/* Window settings */
 window {
-    background: @col_gray1;
-    border: 2px solid @col_gray2;
+  border: 2px;
+  border-color: @fg-alt;
+  padding: 6px;
+  transparency: "real";
 }
 
-/* Element settings */
-element {
-    border-radius: 6px;
-    padding: 5px;
+mainbox {
+  children: [inputbar, listview];
 }
 
-/* Listview settings */
-listview {
-    border: 0px;
-    background: @col_gray1;
-}
-
-/* Selected element settings */
-element selected {
-    background: @col_cyan;
-    color: @col_gray4;
-}
-
-/* Normal element settings */
-element normal {
-    background: @col_gray1;
-    color: @col_gray3;
-}
-
-/* Urgent element settings */
-element urgent {
-    background: @col_cyan;
-    color: @col_gray4;
-}
-
-/* Input bar settings */
 inputbar {
-    border: 2px solid @col_gray2;
-    background: @col_gray1;
-    color: @col_gray3;
+  children: [entry];
 }
 
-/* Preview settings */
-preview {
-    border: 1px solid @col_gray2;
-    background: @col_gray1;
-    color: @col_gray3;
+entry {
+  padding: 10px;
 }
 
-/* Scrollbar settings */
+listview {
+  lines: 10;
+  scrollbar: true;
+}
+
 scrollbar {
-    border: 0px;
-    background: @col_gray2;
+  background-color: @bg-alt;
+  handle-color: @fg;
+  margin: 0 0 0 6px;
 }
 
-/* Scrollbar slider settings */
-scrollbar slider {
-    background: @col_gray4;
+element {
+  children: [element-text];
 }
 
-/* Popup settings */
-popup {
-    border: 2px solid @col_brightborder;
-    background: @col_gray1;
+element-text {
+  padding: 10px;
+}
+
+element-text selected {
+  background-color: @bg-alt;
+  text-color: @fg;
 }
