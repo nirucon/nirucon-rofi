@@ -4,7 +4,7 @@
 
 Welcome to **nirucon**, a Noir-style theme for Rofi designed by Nicklas Rudolfsson. This theme is tailored to complement my suckless-arch dwm setup, offering a sleek and minimalistic look.
 
-https://github.com/nirucon/suckless-arch that I use to clone from my post install script: https://github.com/nirucon/nirucon-alpi
+[nirucon-suckless-arch](https://github.com/nirucon/nirucon-suckless-arch) that I use to clone from my [post install script](https://github.com/nirucon/nirucon-alpi)
 
 ## Features
 
@@ -33,4 +33,4 @@ Here's a quick overview of the configuration used in the `nirucon.rasi` theme:
 
 ## License
 
-Do what you want and give me cred if you want to :)
+Feel free to use and modify, donate if you want :) https://www.paypal.com/paypalme/nicklasrudolfsson
